@@ -1,28 +1,35 @@
-function loadImg(src) {
-  let promise = new Promise(function(resolve, reject) {
-    let img = document.createElement('img')
-    img.onload = function() {
-      resolve(img)
-    }
-    img.onerror = function() {
-      reject('图片加载失败')
-    }
-    img.src = src
-  })
-  return promise
+let star = {
+  name: '张三',
+  age: 24,
+  phone: '13600110011'
 }
 
-let src = 'http://img3.mukewang.com/5aee742a0001a53903790379-140-140.jpg'
-let result = loadImg(src)
-
-result.then(function(img) {
-  // part1
-  alert(`width: ${img.width}`)
-  return img
-}).then(function(img) {
-  // part2
-  alert(`height: ${img.height}`)
-}).catch(function(ex) {
-  alert(ex)
+let agent = new Proxy(star, {
+  get: function(target, key) {
+    if (key === 'phone') {
+      return '18909090101'
+    }
+    if (key === 'price') {
+      return 12000
+    }
+    return target[key]
+  },
+  set: function(target, key, val) {
+    if (key === 'customPrice') {
+      if (val < 100000) {
+        throw new Error('价格太低')
+      } else {
+        target[key] === val
+        return true
+      }
+    }
+  }
 })
 
+console.log(agent.name)
+console.log(agent.age)
+console.log(agent.phone)
+console.log(agent.price)
+
+agent.customPrice = 1000
+console.log(agent.customPrice)
