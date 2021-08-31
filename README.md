@@ -1,5 +1,7 @@
 # Javascript Design Mode
+
 ## 学习慕课网《Javascript 设计模式系统讲解与应用》
+
 视频资源：[Javascript 设计模式系统讲解与应用](https://coding.imooc.com/class/255.html)
 
 1. [x] [面向对象](./doc/video/面向对象.md)
@@ -8,15 +10,15 @@
 
 ## 《JavaScript 设计模式与开发实践》
 
-01. [x] [this-call-apply](./doc/practice/this-call-apply.md)
-02. [x] [闭包和高阶函数](./doc/practice/闭包和高阶函数.md)
-03. [x] [单例模式](./doc/practice/单例模式.md)
-04. [ ] [策略模式](./doc/practice/策略模式.md)
-05. [ ] [代理模式](./doc/practice/代理模式.md)
-06. [ ] [迭代器模式](./doc/practice/迭代器模式.md)
-07. [ ] [发布-订阅模式](./doc/practice/发布订阅模式.md)
-08. [ ] [命令模式](./doc/practice/命令模式.md)
-09. [ ] [组合模式](./doc/practice/组合模式.md)
+1.  [x] [this-call-apply](./doc/practice/this-call-apply.md)
+2.  [x] [闭包和高阶函数](./doc/practice/闭包和高阶函数.md)
+3.  [x] [单例模式](./doc/practice/单例模式.md)
+4.  [ ] [策略模式](./doc/practice/策略模式.md)
+5.  [ ] [代理模式](./doc/practice/代理模式.md)
+6.  [ ] [迭代器模式](./doc/practice/迭代器模式.md)
+7.  [ ] [发布-订阅模式](./doc/practice/发布订阅模式.md)
+8.  [ ] [命令模式](./doc/practice/命令模式.md)
+9.  [ ] [组合模式](./doc/practice/组合模式.md)
 10. [ ] [模板方法模式](./doc/practice/模板方法模式.md)
 11. [ ] [享元模式](./doc/practice/享元模式.md)
 12. [ ] [职责链模式](./doc/practice/职责链模式.md)
@@ -41,3 +43,7 @@
 4. [ ] [行为型设计模式](./doc/mode/行为型设计模式.md)
 5. [ ] [技巧型设计模式](./doc/mode/技巧型设计模式.md)
 6. [ ] [架构型设计模式](./doc/mode/架构型设计模式.md)
+
+## 学习资料
+
+- [JavaScript 设计模式核⼼原理与应⽤实践](https://juejin.cn/book/6844733790204461070) - 掘金小册
